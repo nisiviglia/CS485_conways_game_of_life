@@ -1,0 +1,7 @@
+name "world_cli"	// creates 
+
+toggle at 1,5:4x4
+toggle at 1,5
+
+dead at 1,5
+dead at 4,8

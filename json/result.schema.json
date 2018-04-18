@@ -1,0 +1,27 @@
+{
+  "title": "Result",
+  "type": "object",
+
+  "properties": {
+
+    "success": { "type": "boolean" },
+
+    "message": {
+      "description": "An optional descriptive message, usually used when success is false",
+      "type": "string"
+    },
+
+
+    "world_name": { "type": "string" },
+    "frame_id": { "type": "integer" },
+
+    "live_cells": {
+      "description": "All the now alive cells in this frame",
+      "type": "array",
+      "items": { "$ref": "file:point.schema.json" },
+      "uniqueItems": true
+    }
+
+  },
+  "required": [ "success" ]
+}

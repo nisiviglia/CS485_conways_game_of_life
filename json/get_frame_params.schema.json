@@ -1,0 +1,11 @@
+{
+  "title": "GetFrameParams",
+  "type": "object",
+  "properties": {
+
+    "world_name": { "type": "string" },
+    "frame_id": "{ "type": "integer"}
+
+  },
+  "required": [ "world_name", "frame_id" ]
+}

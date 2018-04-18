@@ -1,0 +1,16 @@
+name "test_world" //	creates world
+
+//	create cells individually
+live at 1,1 2,2 3,3				//	LIVE: 1,1 2,2 3,3
+dead at 3,3						//	LIVE: 1,1 2,2
+toggle at 2,2 1,1				//	LIVE: 
+
+//	use range functinality
+live at 4,4:5,5					//	LIVE: 4,4 4,5 5,4 5,5
+dead at 4,3:4,6					//	LIVE: 5,4 5,5
+toggle at 1,1:2,2				//	LIVE: 5,4 5,5 1,1 1,2 2,1 2,2
+
+//	use dimension functionality
+live at 6,6:2x2					//	LIVE: 5,4 5,5 1,1 1,2 2,1 2,2 6,6 6,7 7,6 7,7
+dead at 6,7:4x4					//	LIVE: 5,4 5,5 1,1 1,2 2,1 2,2 6,6 7,6
+toggle at 5,4:3x3				//	LIVE: 1,1 1,2 2,1 2,2 7,6 5,6 6,4 6,5 7,4 7,5 

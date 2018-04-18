@@ -1,0 +1,11 @@
+
+{
+  "title": "NewWorldParams",
+  "type": "object",
+  "properties": {
+
+    "world_name": { "type": "string" }
+
+  },
+  "required": ["world_name"]
+}

@@ -1,0 +1,12 @@
+
+{
+  "title": "GetNextParams",
+  "type": "object",
+  "properties": {
+
+    "frame_id": { "type": "integer" },
+    "world_name": { "type": "string" }
+
+  },
+  "required": ["frame_id", "world_name"]
+}

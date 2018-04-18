@@ -1,0 +1,16 @@
+{
+  "title": "Region",
+  "type": "object",
+  "properties": {
+
+    "coord": {
+      "description": "Coordinate of the upper left corner of the rectangle",
+      "$ref": "file:point.schema.json"
+    },
+
+    "length": { "type": "integer", "minimum": 1 },
+    "width":  { "type": "integer", "minimum": 1 }
+
+  },
+  "required": ["coord", "length", "width"]
+}

@@ -1,0 +1,6 @@
+name "world_cli"	// creates 
+
+live at 3,3 4,4 5,6
+live at 7,7:9,10
+live at 1,5:4x4
+

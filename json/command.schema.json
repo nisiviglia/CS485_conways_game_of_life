@@ -1,0 +1,28 @@
+{
+ "title": "Command",
+ "type": "object",
+ "properties": {
+
+   "command": {
+     "description": "Name of command to execute",
+     "enum": [ "get_next", "quit", "new_world", "get_frame", "new_frame" ]
+   },
+
+   "params": {
+     "description": "Parameters to the command (see *_params.schema.json)",
+     "anyOf": [
+       { "$ref": "file:get_next_params.schema.json" },
+       { "$ref": "file:new_world_params.schema.json" },
+       { "$ref": "file:get_frame_params.schema.json" },
+       { "$ref": "file:new_frame_params.schema.json" }
+     ]
+    },
+
+    "return_loc": {
+      "description": "Filepath to write result to.",
+      "type": "string"
+    }
+
+  },
+  "required": [ "command" ]
+}

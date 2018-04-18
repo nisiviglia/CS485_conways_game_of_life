@@ -1,0 +1,6 @@
+# exclude everything in directory doxygen except 
+# exclude everything except directory foo/bar
+*
+!.gitignore
+!README.md
+!objlib-doxygen

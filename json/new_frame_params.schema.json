@@ -1,0 +1,19 @@
+{
+  "title": "NewFrameParams",
+  "type": "object",
+  "properties": {
+
+    "frame_id": {"type": "integer" },
+
+    "world_name": { "type": "string" },
+
+    "live_cells": {
+      "description": "Any cells the new frame should start off with",
+      "type": "array",
+      "items": { "$ref": "file:point.schema.json" },
+      "uniqueItems": true
+    }
+
+  },
+  "required": [ "world_name", "live_cells" ]
+}
